@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build . -t stargate01/aidungeon2-rocm:latest
+docker build . -t aidungeon2-rocm:latest
