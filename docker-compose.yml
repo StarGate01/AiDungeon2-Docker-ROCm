@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  aidungeon2:
+    build: .
+    restart: "no"
+    devices:
+      - "/dev/kfd:/dev/kfd"
+      - "/dev/dri:/dev/dri"
+    group_add:
+      - video
+      - render
+      - 44
+      - 109
