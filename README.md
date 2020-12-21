@@ -12,9 +12,16 @@ Run `./build.sh` to build the Docker container.
 
 Then run `./run.sh bash download_model.sh` to download the model (via torrent, you can cancel the seeding after the download has finished if you want by pressing CTRL-C). The model and saved games will be stored in the `persistent-data` directory, which is mounted into the Docker container.
 
+Test your installation using `./run.sh /app/test/test.sh`. It should output detailed info about your GPU and compute capabilities. It should end like this:
+```
+Testing ROCm-CUDA on pyTorch
+CUDA(hip) is available:  True
+CUDA(hip) device_count:  1
+Device name:  Device 687f
+```
 
 ## Usage
-To run the game, execute `./run.sh`
+To run the game, execute `./run.sh` .
 
 To monitor the gpu usage on your host, execute `watch /opt/rocm/bin/rocm-smi` .
 

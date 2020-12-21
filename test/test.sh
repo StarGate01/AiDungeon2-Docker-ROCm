@@ -4,4 +4,4 @@ echo "Testing ROCm"
 ls /dev/dri/
 /opt/rocm/bin/rocm-smi
 /opt/rocm/bin/rocminfo
-./test.py
+/app/test/test.py
