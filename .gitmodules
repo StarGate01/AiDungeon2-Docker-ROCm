@@ -1,0 +1,3 @@
+[submodule "KoboldAI-Client"]
+	path = KoboldAI-Client
+	url = https://github.com/StarGate01/KoboldAI-Client
