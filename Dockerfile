@@ -5,7 +5,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install --upgrade pip setuptools && \
-    pip3 install https://github.com/finetuneanon/transformers/archive/refs/heads/gpt-neo-dungeon-localattention1.zip && \
+    pip3 install git+https://github.com/finetuneanon/transformers.git@gpt-neo-dungeon-localattention1#egg=transformers && \
     pip3 install Flask Flask-SocketIO requests
 
 ADD ./test /app/test/
