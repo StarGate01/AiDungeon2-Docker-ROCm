@@ -6,7 +6,7 @@ RUN apt-get update && \
 
 RUN pip3 install --upgrade pip setuptools && \
     pip3 install git+https://github.com/finetuneanon/transformers.git@gpt-neo-dungeon-localattention1#egg=transformers && \
-    pip3 install Flask Flask-SocketIO requests eventlet
+    pip3 install Flask Flask-SocketIO requests werkzeug
 
 ADD ./test /app/test/
 
